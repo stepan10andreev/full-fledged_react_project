@@ -4,7 +4,8 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
-    "jsx": "react",
+    // повзволяет не импортировать React в каждый файл
+    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     // Allow 'import x from y' when a module doesn't have a default export. (без ... * as ... from ...)
