@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --env port=3000",
+    "build:prod": "webpack --env mode=production",
+    "build:dev": "webpack --env mode=development"
   },
   "author": "stepan10andreev@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.6.2",
     "@types/webpack": "^5.28.2",
+    "@types/webpack-dev-server": "^4.7.2",
     "html-webpack-plugin": "^5.5.3",
     "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
     "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1"
   }
 }
