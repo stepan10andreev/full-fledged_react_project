@@ -8,6 +8,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // Allow 'import x from y' when a module doesn't have a default export. (без ... * as ... from ...)
     "allowSyntheticDefaultImports": true,   
     // позволяет работать с либами на commonjs как с обычными export/import          
