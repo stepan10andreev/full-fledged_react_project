@@ -1,0 +1,26 @@
+:root {
+  --black:          #333333;
+  --green:          #A8B64F;
+  --green-dark:     #899440;
+  --green-active:   #494f23;
+  --red:            #DC3E22;
+  --red-active:     #B7280F;
+  --pink:           #EE735D;
+  --pink-light:     #EA8979;;
+  --white:          hsl(0, 0%, 100%);
+  --grayF4:         hsl(0, 0%, 96%);
+  --grayE4:         hsl(0, 0%, 89%);
+  --grayDE:         hsla(0, 0%, 87%, 1);
+  --grayC4:         hsl(0, 0%, 77%);
+  --grey99:         hsl(0, 0%, 60%);
+
+  --font-family-main: 'Exo', 'sans-serif';
+
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+  --font-size-l: 24px;
+  --font-line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+}

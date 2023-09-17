@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+  // padding: 0;
+  // margin: 0;
+  list-style: none;
+}
+
+button {
+  // padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  /* -webkit-appearance: none;
+  appearance: none; */
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+// input::-webkit-search-decoration,
+// input::-webkit-search-cancel-button,
+// input::-webkit-search-results-button,
+// input::-webkit-search-results-decoration {
+//   display: none;
+// }
+
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
