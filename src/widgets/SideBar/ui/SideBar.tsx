@@ -3,8 +3,8 @@ import styles from './SideBar.module.scss'
 import { FC, useState } from 'react'
 import { ISideBarProps } from './sideBar.interface'
 import { Button } from 'shared/ui/Button/Button'
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
-
+import { ThemeSwitcher } from 'features/ThemeSwitcher'
+import { LanguageSwitcher } from 'features/LanguageSwitcher'
 
 export const SideBar: FC<ISideBarProps> = ({className}) => {
   const [collapsed, setCollapsed] = useState(false)
@@ -19,6 +19,7 @@ export const SideBar: FC<ISideBarProps> = ({className}) => {
         </Button>
         <div className={styles.switchers}>
           <ThemeSwitcher />
+          <LanguageSwitcher />
         </div>
     </div>
   )

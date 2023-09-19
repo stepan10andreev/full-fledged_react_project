@@ -15,5 +15,9 @@
     padding: 5px;
     margin-top: auto;
     align-self: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }

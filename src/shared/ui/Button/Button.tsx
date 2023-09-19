@@ -7,7 +7,7 @@ import { IButtonProps } from './button.interface'
 export const Button: FC<IButtonProps> = ({ className , children, theme, ...otherProps}) => {
   return (
     <button 
-      className={classNames(styles.button, {}, [styles[theme]])}
+      className={classNames(styles.button, {}, [styles[theme], className])}
       {...otherProps}
     >
       {children}

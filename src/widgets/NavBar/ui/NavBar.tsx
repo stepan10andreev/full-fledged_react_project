@@ -1,9 +1,7 @@
-import { Link } from 'react-router-dom'
 import { classNames } from 'shared/lib/classNames/classNames'
 import styles from './NavBar.module.scss'
 import { FC } from 'react'
 import { AppLink, EAppLinkTheme } from 'shared/ui/AppLink/AppLink'
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
 
 export interface INavBarProps {
   className?: string
