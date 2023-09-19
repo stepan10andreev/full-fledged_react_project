@@ -1,9 +1,9 @@
 type TMods = Record<string, boolean | string>
 
-export function classNames(mainClassName: string, mods: TMods, extraClassNames: string[]): string {
+export function classNames(mainClassName: string, mods?: TMods, extraClassNames?: string[]): string {
   return [
     mainClassName,
-    ...extraClassNames,
+    ...extraClassNames.filter(Boolean),
     Object.entries(mods).filter(([className, value]) => Boolean(value)).map(([className]) => className)
   ].join(' ');
 }
