@@ -13,10 +13,16 @@ export interface IAppLinkProps extends PropsWithChildren, LinkProps {
   theme?: EAppLinkTheme
 }
 
-export const AppLink: FC<IAppLinkProps> = ({className, children, to, theme = EAppLinkTheme.PRIMARY, ...otherProps}) => {
+export const AppLink: FC<IAppLinkProps> = ({
+  className,
+  children,
+  to,
+  theme = EAppLinkTheme.PRIMARY,
+  ...otherProps
+}) => {
   return (
-    <Link 
-      to={to} 
+    <Link
+      to={to}
       className={classNames(styles.AppLink, {}, [className, styles[theme]])}
       {...otherProps}
     >
