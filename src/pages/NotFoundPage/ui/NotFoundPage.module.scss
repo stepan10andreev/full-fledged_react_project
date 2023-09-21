@@ -1,0 +1,48 @@
+.notFoundPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  font: var(--font-l);
+}
+
+@keyframes ldio-s6sk5o2k3n {
+  0% {
+    background: #bbcedd;
+  }
+  12.5% {
+    background: #bbcedd;
+  }
+  12.625% {
+    background: #85a2b6;
+  }
+  100% {
+    background: #85a2b6;
+  }
+}
+.ldio-s6sk5o2k3n div {
+  position: absolute;
+  width: 46.75px;
+  height: 46.75px;
+  background: #85a2b6;
+  animation: ldio-s6sk5o2k3n 1.1764705882352942s linear infinite;
+}
+.loadingio-spinner-blocks-344ff0h15by {
+  width: 187px;
+  height: 187px;
+  display: inline-block;
+  overflow: hidden;
+  background: #f1f2f3;
+}
+.ldio-s6sk5o2k3n {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-s6sk5o2k3n div {
+  box-sizing: content-box;
+}
