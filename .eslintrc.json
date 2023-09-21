@@ -1,6 +1,9 @@
 {
-  "extends": ["plugin:@typescript-eslint/recommended"],
-  "plugins": ["@typescript-eslint", "react"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:i18next/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react", "i18next"],
   "rules": {
     "@typescript-eslint/no-empty-interface": [2],
     "@typescript-eslint/explicit-function-return-type": [0],
