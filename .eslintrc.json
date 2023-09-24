@@ -21,5 +21,11 @@
     "linebreak-style": [0],
 
     "max-len": [2, 100, { "ignoreComments": true }]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/src/**/*.test.{ts,tsx}"],
+      "rules": { "i18next/no-literal-string": [0] }
+    }
+  ]
 }
