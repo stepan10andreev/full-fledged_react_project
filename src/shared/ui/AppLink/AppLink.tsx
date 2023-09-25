@@ -1,17 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames'
 import styles from './AppLink.module.scss'
-import { FC, PropsWithChildren } from 'react'
-import { Link, LinkProps } from 'react-router-dom'
-
-export const enum EAppLinkTheme {
-  PRIMARY = 'primary',
-  SECONDARY = 'secondary',
-}
-
-export interface IAppLinkProps extends PropsWithChildren, LinkProps {
-  className?: string
-  theme?: EAppLinkTheme
-}
+import { FC } from 'react'
+import { Link } from 'react-router-dom'
+import { EAppLinkTheme, IAppLinkProps } from './appLink.interface'
 
 export const AppLink: FC<IAppLinkProps> = ({
   className,
@@ -30,3 +21,4 @@ export const AppLink: FC<IAppLinkProps> = ({
     </Link>
   )
 }
+export { EAppLinkTheme }
