@@ -22,6 +22,6 @@ jobs:
       - name: build production project
         run: npm run build:prod
       - name: blinting typescript
-        run: npm run lint:ts
+        run: npm run eslint:ts
       - name: unit testing
         run: npm run test:unit
