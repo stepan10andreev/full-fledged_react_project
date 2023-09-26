@@ -3,5 +3,6 @@
   "Home": "Главная страница",
   "Page not found": "Страница не найдена",
   "An unexpected error has occurred. Try reloading the page": "Произошла ошибка при загрузке. Попробуйте перезагрузить страницу",
-  "Refresh the page": "Обновить страницу"
+  "Refresh the page": "Обновить страницу",
+  "Toogle": "Переключить"
 }

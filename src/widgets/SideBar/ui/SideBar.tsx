@@ -5,10 +5,11 @@ import { ISideBarProps } from './sideBar.interface'
 import { Button } from 'shared/ui/Button/Button'
 import { ThemeSwitcher } from 'features/ThemeSwitcher'
 import { LanguageSwitcher } from 'features/LanguageSwitcher'
+import { useTranslation } from 'react-i18next'
 
 export const SideBar: FC<ISideBarProps> = ({ className }) => {
   const [collapsed, setCollapsed] = useState(false)
-
+  const { t } = useTranslation()
   const handleClick = () => {
     setCollapsed((prev) => !prev)
   }
@@ -21,7 +22,7 @@ export const SideBar: FC<ISideBarProps> = ({ className }) => {
       ])}
     >
       <Button data-testid='sidebar-toogle' onClick={handleClick}>
-        Toogle
+        {t('Toogle')}
       </Button>
       <div className={styles.switchers}>
         <ThemeSwitcher />
