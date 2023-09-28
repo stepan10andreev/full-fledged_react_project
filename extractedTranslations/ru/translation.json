@@ -1,5 +1,6 @@
 {
   "About": "About",
+  "About us": "About us",
   "An unexpected error has occurred": {
     " Try reloading the page": " Try reloading the page",
     "/n Try reloading the page": "/n Try reloading the page"
@@ -7,5 +8,6 @@
   "Home": "Home",
   "Language": "Language",
   "Page not found": "Page not found",
-  "Refresh the page": "Refresh the page"
+  "Refresh the page": "Refresh the page",
+  "Toogle": "Toogle"
 }

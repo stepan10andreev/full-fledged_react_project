@@ -11,16 +11,5 @@ export interface INavBarProps {
 export const NavBar: FC<INavBarProps> = ({ className }) => {
   const { t } = useTranslation()
 
-  return (
-    <div className={classNames(styles.navBar, {}, [className])}>
-      <div className={styles.links}>
-        <AppLink theme={EAppLinkTheme.SECONDARY} to={'/'}>
-          {t('Home')}
-        </AppLink>
-        <AppLink theme={EAppLinkTheme.PRIMARY} to={'/about'}>
-          {t('About')}
-        </AppLink>
-      </div>
-    </div>
-  )
+  return <div className={classNames(styles.navBar, {}, [className])}></div>
 }

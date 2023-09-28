@@ -1,12 +1,26 @@
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react'
 
-export const enum EThemeButton {
+export const enum EButtonTheme {
   GENERAL = 'general',
   BORDER = 'border',
 }
+
+export const enum EButtonBackground {
+  BACKGROUND = 'background',
+  BACKGROUND_INVERTED = 'backgroundInverted',
+}
+
+export const enum EButtonSizes {
+  small = 'small',
+  medium = 'medium',
+  large = 'large',
+}
+
 export interface IButtonProps
   extends PropsWithChildren,
     ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
-  theme?: EThemeButton
+  theme?: EButtonTheme
+  size?: EButtonSizes
+  background?: EButtonBackground
 }

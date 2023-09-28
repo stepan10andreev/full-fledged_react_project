@@ -7,8 +7,28 @@
   background: var(--inverted-bg-color);
   transition: 0.3s;
 
-  &.collapsed {
-    width: var(--collapsed-sidebar-width);
+  .nav {
+    padding: 15px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+
+    .navLink {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+
+      .homeIcon {
+        stroke: var(--inverted-primary-color);
+      }
+
+      .aboutIcon > path {
+        stroke: var(--inverted-primary-color);
+      }
+    }
   }
 
   .switchers {
@@ -19,5 +39,25 @@
     gap: 20px;
     justify-content: space-evenly;
     width: 100%;
+  }
+
+  .button {
+    position: absolute;
+    right: -40px;
+    bottom: 40px;
+  }
+
+  &.collapsed {
+    width: var(--collapsed-sidebar-width);
+
+    .switchers {
+      flex-direction: column;
+    }
+
+    .linkText {
+      width: 0;
+      opacity: 0;
+      transition: opacity 0.2s, width 0.2s;
+    }
   }
 }

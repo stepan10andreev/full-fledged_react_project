@@ -8,7 +8,10 @@ import RussianFlag from 'shared/assets/icons/russia-flag.svg'
 import EnglandFlag from 'shared/assets/icons/england-flag.svg'
 import LanguageIcog from 'shared/assets/icons/language-icon.svg'
 
-export const LanguageSwitcher: FC<ILanguageSwitcherProps> = ({ className }) => {
+export const LanguageSwitcher: FC<ILanguageSwitcherProps> = ({
+  className,
+  short,
+}) => {
   const { t, i18n } = useTranslation()
 
   const switchLang = async () => {
@@ -21,8 +24,11 @@ export const LanguageSwitcher: FC<ILanguageSwitcherProps> = ({ className }) => {
       className={classNames(styles.languageSwitcher, {}, [className])}
     >
       <LanguageIcog />
-      {t('Language')}
+
+      {t(short ? '' : 'Language')}
+
       {i18n.language === 'en' && <EnglandFlag />}
+
       {i18n.language === 'ru' && <RussianFlag />}
     </Button>
   )
