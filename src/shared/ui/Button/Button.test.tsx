@@ -9,8 +9,8 @@ describe('s', () => {
   })
 
   test('with only first parameter', () => {
-    render(<Button>TEST</Button>)
-    expect(screen.getByText('TEST')).toHaveClass('general')
+    render(<Button theme={EButtonTheme.INVERTED_COLOR}>TEST</Button>)
+    expect(screen.getByText('TEST')).toHaveClass('inverted-color')
     screen.debug
   })
 })

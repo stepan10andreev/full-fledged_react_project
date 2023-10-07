@@ -23,9 +23,8 @@ export const NavBar: FC<INavBarProps> = ({ className }) => {
   return (
     <div className={classNames(styles.navBar, {}, [className])}>
       <Button onClick={toogleModal}>{t('Login')}</Button>
-      {/* // eslint-disable-next-line i18next/no-literal-string */}
       <Modal isOpen={isModalOpen} onClose={toogleModal}>
-        xxxxxxxxx
+        <div></div>
       </Modal>
     </div>
   )
