@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react'
 
 export const enum EButtonTheme {
-  INVERTED_COLOR = 'inverted',
+  INVERTED_COLOR = 'inverted-color',
   BORDER = 'border',
 }
 
