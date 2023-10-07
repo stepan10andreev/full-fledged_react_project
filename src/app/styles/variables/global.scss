@@ -1,5 +1,10 @@
 :root {
-  // --primary-color: rgb(0 57 214);
+  --bg-color: rgb(206 202 194);
+  // --inverted-bg-color: rgb(110 110 110);
+  // --primary-color: rgb(0 18 117);
+  // --secondary-color: rgb(83 88 182);
+  // --inverted-primary-color: rgb(0 0 0);
+  // --inverted-secondary-color: rgb(92, 180, 92);
 
   --font-family-main: 'Exo', 'sans-serif';
 
@@ -18,4 +23,6 @@
   --navbar-height: 50px;
   --sidebar-width: 300px;
   --collapsed-sidebar-width: 80px;
+
+  --overlay-color: rgb(0 0 0 / 60%);
 }

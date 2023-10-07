@@ -4,6 +4,11 @@
   align-items: center;
   justify-content: center;
   justify-items: center;
+  color: var(--primary-color);
+}
+
+.inverted-color {
+  color: var(--inverted-primary-color);
 }
 
 .border {

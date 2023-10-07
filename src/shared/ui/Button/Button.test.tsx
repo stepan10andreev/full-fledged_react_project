@@ -9,7 +9,7 @@ describe('s', () => {
   })
 
   test('with only first parameter', () => {
-    render(<Button theme={EButtonTheme.GENERAL}>TEST</Button>)
+    render(<Button>TEST</Button>)
     expect(screen.getByText('TEST')).toHaveClass('general')
     screen.debug
   })

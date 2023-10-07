@@ -6,6 +6,7 @@ import 'shared/config/i18n/i18n'
 import { ErrorBoundary } from 'app/providers/ErrorBoundary'
 import { AppError } from 'widgets/AppError/ui/AppError'
 import { Suspense } from 'react'
+import 'app/styles/index.scss'
 
 const container = document.getElementById('app-root')
 const root = createRoot(container)
