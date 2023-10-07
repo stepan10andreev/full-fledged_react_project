@@ -14,7 +14,7 @@
     "test:ui:ok": "npx loki approve",
     "test:ui:update": "npx loki update",
     "test:ui:ci1": "npx loki --requireReference --reactUri file:./storybook-static",
-    "test:ui:ci": "concurrently --kill-others --raw --success first \"npm run storybook\" \"npm run test:ui\"",
+    "test:ui:ci": "concurrently --kill-others --raw --success first \"npm run storybook\" \"npm run test:ui\" \"deelay\"",
     "visual:report:json": "node scripts/generate-visual-json-report.js",
     "visual:report:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "visual:report": "npm run visual:report:json && npm run visual:report:html",
