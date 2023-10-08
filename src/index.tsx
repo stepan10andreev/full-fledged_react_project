@@ -7,21 +7,24 @@ import { ErrorBoundary } from 'app/providers/ErrorBoundary'
 import { AppError } from 'widgets/AppError/ui/AppError'
 import { Suspense } from 'react'
 import 'app/styles/index.scss'
+import { StoreProvider } from 'app/providers/StoreProvider'
 
 const container = document.getElementById('app-root')
 const root = createRoot(container)
 root.render(
-  <BrowserRouter>
-    <ErrorBoundary
-      fallback={
-        <Suspense fallback={'...loading'}>
-          <AppError />
-        </Suspense>
-      }
-    >
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </ErrorBoundary>
-  </BrowserRouter>
+  <StoreProvider>
+    <BrowserRouter>
+      <ErrorBoundary
+        fallback={
+          <Suspense fallback={'...loading'}>
+            <AppError />
+          </Suspense>
+        }
+      >
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </ErrorBoundary>
+    </BrowserRouter>
+  </StoreProvider>
 )

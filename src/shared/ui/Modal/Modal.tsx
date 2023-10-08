@@ -5,6 +5,7 @@ import { IModalProps } from './modal.interface'
 import styles from './Modal.module.scss'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Portal } from '../Portal/Portal'
+import { useTheme } from 'app/providers/ThemeProvider'
 
 const ANIMATION_DELAY = 300
 

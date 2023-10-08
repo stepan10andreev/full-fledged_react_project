@@ -1,5 +1,4 @@
 import { classNames } from 'shared/lib/classNames/classNames'
-import styles from './LanguageSwitcher.module.scss'
 import { FC } from 'react'
 import { ILanguageSwitcherProps } from './languageSwitcher.interface'
 import { Button } from 'shared/ui/Button/Button'
@@ -7,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import RussianFlag from 'shared/assets/icons/russia-flag.svg'
 import EnglandFlag from 'shared/assets/icons/england-flag.svg'
 import LanguageIcog from 'shared/assets/icons/language-icon.svg'
+import styles from './LanguageSwitcher.module.scss'
 
 export const LanguageSwitcher: FC<ILanguageSwitcherProps> = ({
   className,

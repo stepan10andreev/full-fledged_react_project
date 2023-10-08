@@ -6,10 +6,8 @@ import { SideBar } from 'widgets/SideBar'
 import { Suspense, useEffect } from 'react'
 
 const App = () => {
-  const { theme } = useTheme()
-
   return (
-    <div className={classNames('app', {}, [theme])}>
+    <div className={classNames('app', {}, [])}>
       <Suspense fallback='...loading'>
         <NavBar />
         <div className='app-content'>

@@ -97,3 +97,32 @@ export const Border_Size_xl: Story = {
     theme: EButtonTheme.BORDER,
   },
 }
+
+export const Inverted: Story = {
+  args: {
+    children: 'Text',
+    theme: EButtonTheme.INVERTED_COLOR,
+  },
+}
+export const InvertedDark: Story = {
+  args: {
+    children: 'Text',
+    theme: EButtonTheme.INVERTED_COLOR,
+  },
+}
+InvertedDark.decorators = [ThemeDecorator(Theme.DARK)]
+
+export const Secondary: Story = {
+  args: {
+    children: 'Text',
+    theme: EButtonTheme.SECONDARY,
+  },
+}
+
+export const SecondaryDark: Story = {
+  args: {
+    children: 'Text',
+    theme: EButtonTheme.SECONDARY,
+  },
+}
+SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)]
