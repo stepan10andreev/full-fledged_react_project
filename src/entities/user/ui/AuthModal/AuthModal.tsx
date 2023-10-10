@@ -1,5 +1,3 @@
-import { classNames } from 'shared/lib/classNames/classNames'
-import styles from './AuthModal.module.scss'
 import { FC } from 'react'
 import { Modal } from 'shared/ui/Modal/Modal'
 import { AuthForm } from '../AuthForm/AuthForm'
