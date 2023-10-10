@@ -6,4 +6,5 @@ export interface IModalProps {
   children: React.ReactNode
   exitIcon?: boolean
   zIndex?: number
+  lazy?: boolean
 }

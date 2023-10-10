@@ -6,5 +6,7 @@
   "An unexpected error has occurred. Try reloading the page": "Произошла ошибка при загрузке. Попробуйте перезагрузить страницу",
   "Refresh the page": "Обновить страницу",
   "Toogle": "Переключить",
-  "Login": "Войти"
+  "Login": "Войти",
+  "Enter username": "Введите имя пользователя",
+  "Enter password": "Введите пароль"
 }

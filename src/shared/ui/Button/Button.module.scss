@@ -1,9 +1,13 @@
 .button {
-  // padding: 10px 15px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-items: center;
+  border-radius: 5px;
+}
+
+.primary {
   color: var(--primary-color);
 }
 
@@ -17,18 +21,24 @@
 
 .border {
   border: 1px solid var(--primary-color);
+  border-radius: 5px;
   color: var(--primary-color);
   background: none;
 }
 
-.background {
-  background-color: var(--bg-color);
+.background-primary {
   color: var(--primary-color);
+  background-color: var(--bg-color);
 }
 
-.backgroundInverted {
-  background-color: var(--inverted-bg-color);
+.background-inverted {
   color: var(--inverted-primary-color);
+  background-color: var(--inverted-bg-color);
+}
+
+.background-secondary {
+  color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .small {

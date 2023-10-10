@@ -1,0 +1,17 @@
+.label {
+  width: 100%;
+
+  .input {
+    position: relative;
+    padding: 10px 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+    transition: 0.3s;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

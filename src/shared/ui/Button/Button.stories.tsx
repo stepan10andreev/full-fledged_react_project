@@ -36,10 +36,10 @@ export const BorderDark: Story = {
 }
 BorderDark.decorators = [ThemeDecorator(Theme.DARK)]
 
-export const Background: Story = {
+export const BackgroundPrimary: Story = {
   args: {
     children: 'Text',
-    background: EButtonBackground.BACKGROUND,
+    background: EButtonBackground.BACKGROUND_PRIMARY,
   },
 }
 
@@ -97,6 +97,21 @@ export const Border_Size_xl: Story = {
     theme: EButtonTheme.BORDER,
   },
 }
+
+export const Primary: Story = {
+  args: {
+    children: 'Text',
+    theme: EButtonTheme.PRIMARY,
+  },
+}
+
+export const PrimaryDark: Story = {
+  args: {
+    children: 'Text',
+    theme: EButtonTheme.PRIMARY,
+  },
+}
+PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)]
 
 export const Inverted: Story = {
   args: {

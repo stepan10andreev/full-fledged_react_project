@@ -17,9 +17,10 @@ export const Modal: FC<IModalProps> = ({
   children,
   exitIcon,
   zIndex = 10,
+  lazy,
 }) => {
   const [isClosing, setIsClosing] = useState(false)
-
+  const [isMounted, setIsMounted] = useState(false)
   const timerRef = useRef<ReturnType<typeof setTimeout>>()
 
   const handleClose = useCallback(() => {
@@ -57,9 +58,19 @@ export const Modal: FC<IModalProps> = ({
     }
   }, [isOpen, onKeyDown])
 
+  useEffect(() => {
+    if (isOpen) {
+      setIsMounted(true)
+    }
+  }, [isOpen])
+
   const modalMods: Record<string, boolean> = {
     [styles.opened]: isOpen,
     [styles.isClosing]: isClosing,
+  }
+
+  if (lazy && !isMounted) {
+    return null
   }
 
   return (

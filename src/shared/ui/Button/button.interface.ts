@@ -1,14 +1,16 @@
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react'
 
 export const enum EButtonTheme {
+  PRIMARY = 'primary',
   INVERTED_COLOR = 'inverted-color',
   SECONDARY = 'secondary',
   BORDER = 'border',
 }
 
 export const enum EButtonBackground {
-  BACKGROUND = 'background',
-  BACKGROUND_INVERTED = 'backgroundInverted',
+  BACKGROUND_PRIMARY = 'background-primary',
+  BACKGROUND_INVERTED = 'background-inverted',
+  BACKGROUND_SECONDARY = 'background-secondary',
 }
 
 export const enum EButtonSizes {

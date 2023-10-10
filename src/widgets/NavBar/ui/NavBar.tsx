@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { Button } from 'shared/ui/Button/Button'
 import { EButtonTheme } from 'shared/ui/Button/button.interface'
 import { Modal } from 'shared/ui/Modal/Modal'
+import { AuthModal } from 'entities/user'
 
 export interface INavBarProps {
   className?: string
@@ -16,16 +17,19 @@ export const NavBar: FC<INavBarProps> = ({ className }) => {
 
   const { t } = useTranslation()
 
-  const toogleModal = useCallback(() => {
-    setIsModalOpen(!isModalOpen)
-  }, [isModalOpen])
+  const closeModal = useCallback(() => {
+    setIsModalOpen(false)
+  }, [])
+
+  const openModal = useCallback(() => {
+    setIsModalOpen(true)
+  }, [])
 
   return (
     <div className={classNames(styles.navBar, {}, [className])}>
-      <Button onClick={toogleModal}>{t('Login')}</Button>
-      <Modal isOpen={isModalOpen} onClose={toogleModal}>
-        <div></div>
-      </Modal>
+      <Button onClick={openModal}>{t('Login')}</Button>
+
+      <AuthModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   )
 }
