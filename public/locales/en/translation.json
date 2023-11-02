@@ -6,7 +6,10 @@
   "An unexpected error has occurred. Try reloading the page": "An unexpected error has occurred. Try reloading the page",
   "Refresh the page": "Refresh the page",
   "Toogle": "Toggle",
-  "Login": "Login",
   "Enter username": "Enter username",
-  "Enter password": "Enter password"
+  "Enter password": "Enter password",
+  "Authorization": "Authorization",
+  "Incorrect username or password": "Incorrect username or password",
+  "Log In": "Log In",
+  "Log out": "Log out"
 }

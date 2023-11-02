@@ -141,3 +141,11 @@ export const SecondaryDark: Story = {
   },
 }
 SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)]
+
+export const Disabled: Story = {
+  args: {
+    children: 'Text',
+    theme: EButtonTheme.PRIMARY,
+    disabled: true,
+  },
+}

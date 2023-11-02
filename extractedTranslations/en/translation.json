@@ -4,11 +4,15 @@
   "An unexpected error has occurred": {
     " Try reloading the page": " Try reloading the page"
   },
+  "Authorization": "",
   "Enter password": "Enter password",
   "Enter username": "Enter username",
   "Home": "Home",
+  "Incorrect username or password": "",
   "Log In": "Log In",
+  "Log out": "",
   "Login": "Login",
+  "Logout": "",
   "Page not found": "Page not found",
   "Refresh the page": "Refresh the page"
 }

@@ -1,4 +1,4 @@
-type TMods = Record<string, boolean | string>
+type TMods = Record<string, boolean | string | number>
 
 export function classNames(
   mainClassName: string,
@@ -11,5 +11,7 @@ export function classNames(
     ...Object.entries(mods)
       .filter(([_, value]) => Boolean(value))
       .map(([className]) => className),
-  ].join(' ')
+  ]
+    .join(' ')
+    .trim()
 }

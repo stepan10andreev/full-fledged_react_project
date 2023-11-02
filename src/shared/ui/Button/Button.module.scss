@@ -5,6 +5,11 @@
   justify-content: center;
   justify-items: center;
   border-radius: 5px;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 .primary {

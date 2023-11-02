@@ -1,6 +1,6 @@
 import path from 'path'
 import { IBuildPaths } from '../build/types/config.interface'
-import webpack, { RuleSetRule } from 'webpack'
+import webpack, { DefinePlugin, RuleSetRule } from 'webpack'
 import { buildCSSLoader } from '../build/loaders/buildCSSLoader'
 
 export default ({ config }: { config: webpack.Configuration }) => {
@@ -36,6 +36,12 @@ export default ({ config }: { config: webpack.Configuration }) => {
       paths: paths,
       isDev: true,
       port: 3000,
+    })
+  )
+
+  config.plugins.push(
+    new DefinePlugin({
+      _IS_DEV_: true,
     })
   )
 
