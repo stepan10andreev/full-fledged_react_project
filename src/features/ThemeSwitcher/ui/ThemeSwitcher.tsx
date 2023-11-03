@@ -8,7 +8,7 @@ import { Button } from 'shared/ui/Button/Button'
 
 export const ThemeSwitcher: FC<IThemeSwitcherProps> = ({ className }) => {
   const { theme, switchTheme } = useTheme()
-  console.log(theme)
+
   return (
     <Button className={classNames('', {}, [className])} onClick={switchTheme}>
       {theme === Theme.DARK ? <DarkIcon /> : <LightIcon />}
