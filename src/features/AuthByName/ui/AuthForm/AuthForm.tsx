@@ -13,8 +13,8 @@ import { Error } from 'shared/ui/Error/Error'
 import { Text } from 'shared/ui/Text/Text'
 import { ETextTheme } from 'shared/ui/Text/text.interface'
 import { getAuthUsername } from '../../model/selectors/getAuthUsername/getAuthUsername'
-import { getAuthPassword } from '../../model/selectors/getAuthPassword/getLoginPassword'
-import { getAuthIsLoading } from '../../model/selectors/getAuthIsLoading/getLoginIsLoading'
+import { getAuthPassword } from '../../model/selectors/getAuthPassword/getAuthPassword'
+import { getAuthIsLoading } from '../../model/selectors/getAuthIsLoading/getAuthIsLoading'
 import { getAuthError } from '../../model/selectors/getAuthError/getAuthError'
 import {
   DynamicModuleLoader,
