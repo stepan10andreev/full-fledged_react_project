@@ -14,6 +14,6 @@ describe('getAuthError.test', () => {
 
   test('should work with empty state', () => {
     const state: DeepPartial<StoreSchema> = {}
-    expect(getAuthError(state as StoreSchema)).toEqual(false)
+    expect(getAuthError(state as StoreSchema)).toEqual(undefined)
   })
 })
